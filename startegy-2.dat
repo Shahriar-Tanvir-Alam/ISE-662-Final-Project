@@ -1,0 +1,63 @@
+/*********************************************
+ * OPL 12.6.1.0 Data
+ * Author: SHAHRIAR TANVIR ALAM
+ * Creation Date: Apr 19, 2024 at 5:29:32 AM
+ *********************************************/
+OPs = {"A","B"};
+ODCs = {"D1","D2","D3"};
+DPs = {"R1","R2","R3"};
+products = {"O1","O2"};
+vehicles= {"V1"};
+
+total_available_quantity_oxygen_OPs=
+[[60000, 80000],
+[70000, 65000]];//k(i_g)
+
+per_unit_cost_vehicle=[25];//Cl
+
+weight_commodity=[0.05,0.1];//Wg
+volume_commodity=[0.0025,0.0030];//Vg
+
+weight_vehicle=[5400];//Wl
+volume_vehicle=[3.8];//Vl
+
+total_number_vehicle=[100];
+
+
+demand_oxygen_DPs=
+[[12000, 11300, 7500],  // Product A
+ [8500, 13700, 8800]]; // Product B
+
+
+machine=[15,15];
+
+capacity_of_ODC=[[20000, 18500, 15000],[21500, 22000, 17000]];//Pj
+
+
+shortage_cost_unsatisfied_demand_oxygen_DPs=
+[[10, 10, 10],  // Product A
+ [12, 12, 12]]; // Product B
+
+cost_maintenance=
+[[4,4],  // Product A
+ [5,5]]; // Product B
+
+cost_maintenance_vehicle=[30];
+
+
+emergency_rating=[0.8,0.8];//alpha
+
+
+
+
+
+distance_OPs_ODCs=[
+[130,119,99],
+[146,125,102.5]];//Sij
+
+distance_ODCs_DPs=[
+[132.5,140,120],
+[140,98,90],
+[130,143,109]];//Mjr
+
+

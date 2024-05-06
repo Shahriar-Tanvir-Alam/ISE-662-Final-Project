@@ -1,0 +1,63 @@
+/*********************************************
+ * OPL 12.6.1.0 Data
+ * Author: SHAHRIAR TANVIR ALAM
+ * Creation Date: Apr 18, 2024 at 9:49:35 PM
+ *********************************************/
+demand_deamand_center= [[20000, 17000, 14000], [12000, 17000, 13000]];
+
+//demand_fulfillment_percentage = [.8, .8];
+// Demand of products at customer centers
+demand_customer_center = 
+[[12000, 11300, 7500],  // Product A
+ [8500, 13700, 8800]]; // Product B
+
+machine=[30];
+// Capacities of supply centers
+capacity_supply_center = [100000, 200000];
+
+// Capacities of manufacturing centers
+capacity_manufacturing_center = [1500000];
+
+// Capacities of demand centers
+capacity_demand_center = [200000, 150000, 170000];
+
+// Capacities of retail centers
+capacity_retail_center = [12000000, 10000000];
+
+// Costs of transporting products from supply centers to manufacturing centers
+cost_supply_to_manufacturing = 
+[[[5], [5]],  // Product A
+ [[7], [7]]]; // Product B
+
+// Costs of transporting products from manufacturing centers to demand centers
+cost_manufacturing_to_demand = 
+[[[6, 7, 8]],  // Product A
+ [[8, 8, 9]]]; // Product B
+
+// Costs of transporting products from demand centers to retail centers
+cost_demand_to_retail = 
+[[[3, 4], [5, 4], [3, 4]],  // Product A
+ [[4, 5], [4, 3], [3, 4]]]; // Product B
+
+
+// Costs of transporting products from retail centers to customer centers
+cost_retail_to_customer = 
+[
+    [[2, 3, 4], [4, 5, 1]],  // Product A
+    [[3, 4, 3], [4, 3, 2]]   // Product B
+];
+
+cost_shortage=
+[[10, 10, 10],  // Product A
+ [12, 12, 12]]; // Product B
+
+cost_maintenance=
+[[4],  // Product A
+ [5]]; // Product B
+
+cost_inventory=
+[[2, 2, 2],  // Product A
+ [3, 3, 3]]; // Product B
+
+ 
+ 
