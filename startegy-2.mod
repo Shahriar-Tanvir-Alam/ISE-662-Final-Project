@@ -56,6 +56,10 @@ dvar int+ shortage_demand_oxygen_DPs[products][DPs];//SHrg
 
 //objective function
 minimize
+  sum(l in vehicles)per_unit_cost_vehicle[l]*(
+  sum(i in OPs,j in ODCs)distance_OPs_ODCs[i][j]*number_vehicle_OPs_ODCs[i][j][l]+
+  sum(j in ODCs,r in DPs)distance_ODCs_DPs[j][r]*number_vehicle_ODCs_DPs[j][r][l])+
+  sum(r in DPs,s in products)shortage_cost_unsatisfied_demand_oxygen_DPs[s][r]*shortage_demand_oxygen_DPs[s][r]+
   sum(s in products,i in OPs)2*2*machine[i]*cost_maintenance[s][i]+
   sum(l in vehicles)cost_maintenance_vehicle[l]*total_number_vehicle[l];
   
